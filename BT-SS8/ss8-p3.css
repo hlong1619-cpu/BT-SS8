@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+.container .child {
+  background: rgb(44, 40, 40);
+  width: calc(25% - 20px);
+  min-height: 150px;
+  color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  .container .child {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 760px) {
+  .container .child {
+    width: calc(100% - 10px);
+  }
+}
